@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/test/test",
+    "pages/index/index",
+   
+    "pages/goods/goods",
+  
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "微信接口功能演示",
+  "backgroundColor": "#123456",
+  "backgroundTextStyle": "light"
+   
+  },
+    "tabBar": {
+      "color":"#000000",
+      "selectedColor":"#00ff00",
+      "backgroundColor":"#FFB6C1",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页",
+          "iconPath":"./images/index.png",
+          "selectedIconPath":"./images/index1.png"
+        },
+        {
+          "pagePath": "pages/test/test",
+          "text": "测试",
+          "iconPath": "./images/test.png",
+          "selectedIconPath": "./images/test1.png"
+        }
+      ]
+    },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

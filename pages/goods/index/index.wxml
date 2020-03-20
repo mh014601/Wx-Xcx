@@ -1,0 +1,15 @@
+<!--pages/goods/index/index.wxml-->
+<button bindtap="jumpde" data-id="200" data-sn="999">跳到商品详情</button>
+<block wx:for="{{goodsList}}" wx:key="*this">
+<navigator url="/pages/goods/detail/detail?id={{item.id}}&sex=888">
+
+  <view>商品id:{{item.id}}</view>
+  <view>商品名称:{{item.goods_name}}</view>
+  <view>商品价格:{{item.goods_price}}</view>
+  <view>商品图片:
+  <image src="http://localhost/thinkphp/Public/upload/{{item.goods_pic}}"></image>
+  
+  </view>
+  </navigator>
+</block>
+

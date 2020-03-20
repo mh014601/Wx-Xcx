@@ -1,0 +1,17 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+
+  <view class="section">
+    <view class="section__title">用户名</view>
+    <input name="uname" placeholder="请输入用户名" />
+  </view>
+   <view class="section">
+    <view class="section__title">密码</view>
+    <input name="upass" placeholder="请输入密码" />
+  </view>
+ 
+  <view class="btn-area">
+    <button formType="submit">登录</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form>

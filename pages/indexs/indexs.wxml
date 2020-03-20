@@ -1,0 +1,9 @@
+<!--pages/indexs/indexs.wxml-->
+
+<view wx:if="{{flag}}">
+欢迎您XXX
+</view>
+<view wx:else>
+<navigator url="/pages/login/login">请登录</navigator>
+
+</view>

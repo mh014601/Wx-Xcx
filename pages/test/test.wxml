@@ -1,0 +1,34 @@
+<!--pages/test/test.wxml-->
+<!-- <block wx:if="{{sex == 1}}">
+  <view > 男 </view>
+  <view>先生</view>
+</block>
+
+
+<view wx:elif="{{sex == 2}}"> 女 </view>
+<view>女士</view>
+<view wx:else> 保密</view>
+<view>未知</view> -->
+
+<!-- <view wx:for="{{info}}" wx:for-index="idx" wx:for-item="it">
+  {{idx}}:{{it.name}}
+</view> -->
+<swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+       
+        <block wx:for="{{bglist}}">
+        
+         <swiper-item>
+            <view><image src="{{item}}"></image></view>
+          </swiper-item>
+        </block>
+      </swiper>
+<button type="warn"  plain="true" >点击</button>
+<text>pages/test/test.wxml</text>
+
+<image src="/images/dongman.jpg" mode="widthFix"></image>
+<audio id="1" src="/images/1.mp3" controls="true"></audio>
+<video src="/images/1.mp4" controls="true"></video>
+{{name}}
+{{classname}}
+

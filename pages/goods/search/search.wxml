@@ -1,0 +1,26 @@
+<!--pages/goods/search/search.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+   <view class="section">
+    <view class="section__title">请输入搜索的内容</view>
+    <input name="goods_name" placeholder="please input here" />
+  </view>
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+  </view>
+</form>
+<block wx:for="{{goods_list}}" wx:key="*this">
+<navigator url="/pages/goods/detail/detail">
+
+  <view>商品id:{{item.id}}</view>
+  <view>商品名称:{{item.goods_name}}</view>
+  <view>商品价格:{{item.goods_price}}</view>
+  <view>商品图片:
+  <image src="http://localhost/thinkphp/Public/upload/{{item.goods_pic}}"></image>
+  
+  </view>
+  </navigator>
+</block>
+
+
+
+
